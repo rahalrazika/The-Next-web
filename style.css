@@ -30,14 +30,42 @@ a {
 
 .upper-nav {
   height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: royalblue;
   grid-area: upper-nav;
+}
+.up-first-list {
+    display: flex;
+    
+}
+  
+.up-second-list {
+    display: flex;
+}
+.up-first-list li {
+  padding: 0 10px;   
+}
+.up-second-list li {
+    padding: 0 10px;   
 }
 
 .lower-nav {
   height: 60px;
   background-color: rosybrown;
   grid-area: lower-nav;
+}
+.lower-nav-list {
+    display: flex;
+    flex-direction: row;
+}
+.lower-nav li {
+ justify-content: space-between;
+ padding: 5px;
+}
+.lower-nav-list li a {
+   color: black;
 }
 
 .conference {
