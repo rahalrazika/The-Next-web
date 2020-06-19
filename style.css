@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobile-logo {
+  display: none;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  height: 90px;
+  width: 75px;
+  grid-area: logo;
+}
+
+.mobile-logo:hover {
+  background-image: url('assets/logo-bg-gif.gif');
+}
+
+.mobile-logo img {
+  width: 100%;
+}
+
+.upper-nav {
+  height: 30px;
+  background-color: royalblue;
+  grid-area: upper-nav;
+}
+
+.lower-nav {
+  height: 60px;
+  background-color: rosybrown;
+  grid-area: lower-nav;
+}
+
+.conference {
+  height: 25px;
+  background-color: silver;
+}
+
+@media screen and (max-width: 786px) {
+  .mobile-nav-grid {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-areas: 
+    'logo upper-nav'
+    'logo lower-nav';
+  }
+  .mobile-logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+  }
+}
