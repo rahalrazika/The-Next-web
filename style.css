@@ -162,7 +162,6 @@ a {
 .fund-round {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  height: 20vh;
   padding: 0 40px;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -184,32 +183,102 @@ a {
 .fund-info {
   background-color: lightgoldenrodyellow;
 }
+
 .categories-section {
   margin-top: 110px;
   grid-template-columns: repeat(3, 1fr);
-  height: 40vh;
+  height: 30vh;
   grid-gap: 20px;
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .cat-item {
   background-color: coral;
   height: 40vh;
 }
+
 .latest-deals {
   margin-top: 700px;
-  
 }
-.footer-links {
+
+.widget-area {
+  background-color: #131313;
   justify-content: center;
+  color: #aaa;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.social-icons {
+  justify-content: center;
+}
+
+.social-icons li {
+  padding: 10px;
+}
+
+.social-icons a {
+  height: 40px;
+  width: 40px;
+  background-color: #444;
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  text-align: center;
+}
+
+.social-icons a:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #333;
+}
+
+.social-icons img {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-nav {
+  padding: 20px;
+  padding-top: 0;
+  justify-content: center;
+}
+
+.footer-nav li {
+  padding: 10px;
+  font-weight: 100;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.copyright-area {
+  background-color: black;
+  color: white;
+  justify-content: center;
+  padding: 30px;
+  font-size: 13px;
+}
+
+.copyright-area img {
+  height: 9px;
+}
+
+.copyright-area span {
+  color: #aaa;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 1023px) {
   .latest-news {
     grid-template-columns: repeat(3, 1fr);
-  } 
+  }
+
   .categories-section {
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .fund-round {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -221,6 +290,7 @@ a {
     'logo upper-nav'
     'logo main-nav';
   }
+
   .mobile-logo {
     display: flex;
     justify-content: center;
@@ -231,8 +301,13 @@ a {
   .latest-news {
     grid-template-columns: 1fr;
   }
+
   .categories-section {
      margin-top:270px ;
+    grid-template-columns: 1fr;
+  }
+
+  .fund-round {
     grid-template-columns: 1fr;
   }
 }
