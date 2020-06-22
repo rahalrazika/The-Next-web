@@ -184,13 +184,31 @@ a {
 .fund-info {
   background-color: lightgoldenrodyellow;
 }
+.categories-section {
+  margin-top: 110px;
+  grid-template-columns: repeat(3, 1fr);
+  height: 40vh;
+  grid-gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.cat-item {
+  background-color: coral;
+  height: 40vh;
+}
+.latest-deals {
+  margin-top: 700px;
+  
+}
 
 @media screen and (max-width: 1023px) {
   .latest-news {
     grid-template-columns: repeat(3, 1fr);
+  } 
+  .categories-section {
+    grid-template-columns: repeat(2,1fr);
   }
 }
-
 
 @media screen and (max-width: 786px) {
   .mobile-nav-grid {
@@ -208,6 +226,10 @@ a {
   }
 
   .latest-news {
+    grid-template-columns: 1fr;
+  }
+  .categories-section {
+     margin-top:270px ;
     grid-template-columns: 1fr;
   }
 }
