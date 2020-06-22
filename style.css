@@ -17,6 +17,10 @@ a {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .align-center {
   align-items: center;
 }
@@ -109,9 +113,84 @@ a {
   height: 25px;
   background-color: yellow;
 }
-..cover-container div {
+
+.featured-articles {
   display: grid;
- }
+  grid-template-columns: 3fr 1.5fr;
+  height: 50vh;
+  grid-template-areas: 
+  'fa-main fa-small-1'
+  'fa-main fa-small-2'
+  ;
+  grid-gap: 10px;
+  padding: 3px;
+}
+
+.fa-main {
+  grid-area: fa-main;
+  background-color: skyblue;
+  width: 100%;
+}
+
+.fa-small-1 {
+  grid-area: fa-small-1;
+  background-color: slateblue;
+}
+
+.fa-small-2 {
+  grid-area: fa-small-2;
+  background-color: springgreen;
+}
+
+.latest-news {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  height: 40vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.news-item {
+  background-color: tomato;
+}
+
+.fund-round {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  height: 20vh;
+  padding: 0 40px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.fund-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.fund-title {
+  background-color: orangered;
+}
+
+.fund-amount {
+  background-color: palegoldenrod;
+}
+
+.fund-info {
+  background-color: lightgoldenrodyellow;
+}
+
+@media screen and (max-width: 1023px) {
+  .latest-news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 
 @media screen and (max-width: 786px) {
   .mobile-nav-grid {
@@ -126,5 +205,19 @@ a {
     justify-content: center;
     padding: 10px;
     align-items: center;
+  }
+
+  .latest-news {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .featured-articles {
+    grid-template-areas: 
+    'fa-main'
+    'fa-small-1'
+    'fa-small-2';
+    grid-template-columns: 1fr;
   }
 }
