@@ -109,6 +109,9 @@ a {
   height: 25px;
   background-color: yellow;
 }
+..cover-container div {
+  display: grid;
+ }
 
 @media screen and (max-width: 786px) {
   .mobile-nav-grid {
