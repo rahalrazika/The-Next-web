@@ -11,6 +11,12 @@ li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
 }
 
 .flex {
@@ -32,7 +38,6 @@ a {
 .mobile-logo {
   display: none;
   background: linear-gradient(to bottom right,#c09,#f42 85%);
-  height: 90px;
   width: 75px;
   grid-area: logo;
 }
@@ -58,7 +63,7 @@ a {
 
 .upper-nav a {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 100;
 }
 
@@ -84,6 +89,7 @@ a {
 
 .mn-list li a {
    color: #aaa;
+   font-size: 13px;
 }
 
 .mn-list li a:hover {
@@ -92,26 +98,65 @@ a {
 
 .conf-time {
   padding-left: 10px;
-  border-left: 1px solid #aaa;
+  border-left: 1px solid #ccc;
 }
 
-.conf-time img {
-  width: 50%;
+.search-icon {
+  padding-right: 10px;
+  height: 18px;
+}
+
+.menu-icon {
+  display: none;
+  height: 18px;
+}
+
+.eco-text {
+  height: 18px;
+}
+
+.conf-time p {
+  color: red;
+  padding-right: 10px;
+  font-size: 22px;
+  margin-bottom: 3px;
+  letter-spacing: 1px;
+}
+
+.conf-time span {
+  font-size: 11px;
+  padding-left: 3px;
+  color: #444;
+  padding-right: 5px;
 }
 
 .conf-time button {
   padding: 8px 10px;
   background-color: skyblue;
-  font-size: 11px;
-  font-weight: 100;
+  font-size: 9px;
+  letter-spacing: 1px;
+  font-weight: 900;
   color: white;
   border: 0;
   border-radius: 4px;
+  margin-bottom: 3px;
+}
+
+.conf-time button:hover {
+  background-color: purple;
 }
 
 .conf-info {
-  height: 25px;
-  background-color: yellow;
+  background-color: #fd3
+}
+
+.conf-info a {
+  display: block;
+  padding: 7px 0;
+  color: #000;
+  font-size: 13px;
+  font-weight: 100;
+  padding-left: 20px;
 }
 
 .featured-articles {
@@ -331,21 +376,11 @@ a {
   font-weight: 100;
 }
 
-@media screen and (max-width: 1023px) {
-  .latest-news {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .categories-section {
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  .fund-round {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media screen and (max-width: 1110px) {
+  .eco-text, .conf-time span, .conf-time p, .conf-time button {display: none;}
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1023px) {
   .mobile-nav-grid {
     display: grid;
     grid-template-columns: 75px 1fr;
@@ -361,12 +396,32 @@ a {
     align-items: center;
   }
 
+  .upper-nav a {
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .latest-news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .categories-section {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .fund-round {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 786px) {
+
   .latest-news {
     grid-template-columns: 1fr;
   }
 
   .categories-section {
-     margin-top:270px ;
+    margin-top: 270px;
     grid-template-columns: 1fr;
   }
 
@@ -376,6 +431,35 @@ a {
 }
 
 @media screen and (max-width: 770px) {
+  .mobile-nav-grid {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-areas: 
+    'logo main-nav'
+    ;
+  }
+
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .main-nav {
+    justify-content: flex-end;
+  }
+
+  .upper-nav {
+    display: none;
+  }
+
+  .mn-list {
+    display: none;
+  }
+
+  .conf-info a {
+    padding: 25px 0;
+    text-align: center;
+  }
+
   .featured-articles {
     grid-template-areas: 
     'fa-main'
