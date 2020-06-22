@@ -200,6 +200,9 @@ a {
   margin-top: 700px;
   
 }
+footer {
+  justify-content: center;
+}
 
 @media screen and (max-width: 1023px) {
   .latest-news {
