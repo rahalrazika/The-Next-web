@@ -261,6 +261,15 @@ button {
   margin-left: 12px;
 } */
 
+.pd-40 {
+  padding: 40px;
+}
+
+.latest-title {
+  color: #f42;
+  font-size: 1.8rem;
+}
+
 .latest-news {
   margin-top: 40px;
   margin-bottom: 50px;
@@ -269,23 +278,17 @@ button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.news-item {
- display: flex; 
- flex-direction: column;
 }
 
 .news-item-img img {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
-.news-item p {
+.news-item h2 {
   color: black;
-  font-size: 13px;
+  font-size: 1rem;
   padding-top: 2px;
   margin-left: 4px;
   line-height: 20px;
@@ -296,19 +299,17 @@ button {
 .news-item span {
   color: #ccc;
   font-size: 13px;
-  padding-top: 2px;
+  font-weight: 100;
+  padding-top: 7px;
   margin-left: 4px;
 }
-.fundes-header ul {
-  align-items: flex-end;
-  
- }
- 
+
+.fund-header {
+}
 
 .fund-round {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  padding: 0 40px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -460,26 +461,6 @@ button {
   }
 }
 
-@media screen and (max-width: 786px) {
-
-  .latest-news {
-    grid-template-columns: 1fr;
-  }
-  .news-item-img img {
-    width: 30%;
-    height: 20%;
-
-  }
-  .categories-section {
-    margin-top: 270px;
-    grid-template-columns: 1fr;
-  }
-
-  .fund-round {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media screen and (max-width: 770px) {
   .mobile-nav-grid {
     display: grid;
@@ -488,7 +469,6 @@ button {
     'logo main-nav'
     ;
   }
-
 
   .menu-icon {
     display: inline-block;
@@ -526,5 +506,48 @@ button {
 
   .featured-articles h2 {
     font-size: 1.1rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .latest-news {
+    grid-template-columns: 1fr;
+  }
+
+  .news-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+  }
+
+  .news-item-img {
+    height: 72px;
+    
+  }
+
+  .news-item-img img {
+    width: 100%;
+  }
+
+  .categories-section {
+    margin-top: 270px;
+    grid-template-columns: 1fr;
+  }
+
+  .fund-round {
+    grid-template-columns: 1fr;
+  }
+
+  .news-item div:not(.news-item-img) {
+    padding-left: 10px;
+  }
+
+  .news-item h2 {
+    font-size: 0.85rem;
+  }
+
+  .news-item span {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.75rem;
   }
 }
