@@ -305,8 +305,24 @@ button {
 }
 
 .fund-header {
+  color : #f42 ;
+
 }
 
+.fund-header li {
+  border-right: solid 1px orangered;
+  padding: 7px;
+}
+.fund-item img {
+  width: 20%;
+  margin-top: -23px;
+  margin-left: 18px;
+  z-index: 100;
+}
+.fund-item h2 {
+  font-size: 1rem;
+  text-align: center;
+}
 .fund-round {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -321,10 +337,12 @@ button {
 
 .fund-title {
   background-color: orangered;
+  padding: 10px;
 }
 
 .fund-amount {
-  background-color: palegoldenrod;
+  background-color: rosybrown;
+  margin-top: -37px;
 }
 
 .fund-info {
