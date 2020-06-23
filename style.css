@@ -290,6 +290,7 @@ button {
   margin-left: 4px;
   line-height: 20px;
   font-weight: bold;
+  font-family: sans-serif;
 }
 
 .news-item span {
@@ -298,6 +299,11 @@ button {
   padding-top: 2px;
   margin-left: 4px;
 }
+.fundes-header ul {
+  align-items: flex-end;
+  
+ }
+ 
 
 .fund-round {
   grid-template-columns: repeat(4, 1fr);
