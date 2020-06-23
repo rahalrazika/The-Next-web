@@ -407,44 +407,122 @@ button {
   padding-right: 40px;
 }
 
-.cat-item {
-  width: 100%;
+.category-item {
+  display: flex;
+  flex-direction: column;
 }
-.cat-header {
-  background-image: url("assets/cat-1.png");
+
+.cat-bg-1 {
+  background-image: 
+  linear-gradient(
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0.85)
+  ),
+  url(assets/cat-1.png);
+}
+
+.cat-bg-2 {
+  background-image: 
+  linear-gradient(
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0.85)
+  ),
+  url(assets/cat-2.jpg);
+}
+
+.cat-bg-3 {
+  background-image: 
+  linear-gradient(
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0.85)
+  ),
+  url(assets/cat-3.png);
+}
+
+.cat-bg-4 {
+  background-image: 
+  linear-gradient(
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0.85)
+  ),
+  url(assets/cat-4.jpg);
+}
+
+.cat-bg-5 {
+  background-image: 
+  linear-gradient(
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0.85)
+  ),
+  url(assets/cat-5.jpg);
+}
+
+.cat-bg-6 {
+  background-image: 
+  linear-gradient(
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0.85)
+  ),
+  url(assets/cat-6.jpg);
+}
+
+.cat-bg-7 {
+  background-image: 
+  linear-gradient(
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0.85)
+  ),
+  url(assets/cat-7.jpg);
+}
+
+.cat-bg-8 {
+  background-image: 
+  linear-gradient(
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0.85)
+  ),
+  url(assets/cat-8.jpg);
+}
+
+.cat-main-art {
   background-repeat: no-repeat;
-   background-size: cover;
-   height: 40vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
+  background-size: cover;
+  padding: 10px;
+  padding-top: 35%;
+  padding-bottom: 15px;
+  color: white;
  }
- .cat-header p {
+
+ .cat-main-art h2 {
+  font-size: 1.3rem;
+  padding: 4px 0;
+  }
+
+ .cat-main-art p {
    font-size: 12px;
-   color: wheat;
-   text-align: left;
  }
- 
- .cat-header h2 {
+
+.cat-main-art span {
   font-size: 12px;
-  color: wheat;
+  color: #aaa;
 }
-.cat-header span {
-  font-size: 12px;
-  color: wheat;
-}
+
 .latest-section {
   background-color: rosybrown;
 }
+
 .latest-section p {
  font-size: 12px;
 }
+
 .latest-section h2 {
   font-size: 14px;
 }
+
 .latest-section span {
   font-size: 12px;
 }
+
 .latest-section img{
   width: 10%;
   float: right;
