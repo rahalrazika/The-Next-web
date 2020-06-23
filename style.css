@@ -408,8 +408,46 @@ button {
 }
 
 .cat-item {
-  background-color: coral;
-  height: 40vh;
+  width: 100%;
+}
+.cat-header {
+  background-image: url("assets/cat-1.png");
+  background-repeat: no-repeat;
+   background-size: cover;
+   height: 40vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+ }
+ .cat-header p {
+   font-size: 12px;
+   color: wheat;
+   text-align: left;
+ }
+ 
+ .cat-header h2 {
+  font-size: 12px;
+  color: wheat;
+}
+.cat-header span {
+  font-size: 12px;
+  color: wheat;
+}
+.latest-section {
+  background-color: rosybrown;
+}
+.latest-section p {
+ font-size: 12px;
+}
+.latest-section h2 {
+  font-size: 14px;
+}
+.latest-section span {
+  font-size: 12px;
+}
+.latest-section img{
+  width: 10%;
+  float: right;
 }
 
 .latest-deals {
