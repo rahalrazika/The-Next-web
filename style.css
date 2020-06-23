@@ -304,25 +304,6 @@ button {
   margin-left: 4px;
 }
 
-.fund-header {
-  color : #f42 ;
-
-}
-
-.fund-header li {
-  border-right: solid 1px orangered;
-  padding: 7px;
-}
-.fund-item img {
-  width: 20%;
-  margin-top: -23px;
-  margin-left: 18px;
-  z-index: 100;
-}
-.fund-item h2 {
-  font-size: 1rem;
-  text-align: center;
-}
 .fund-round {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -331,28 +312,96 @@ button {
 }
 
 .fund-item {
-  display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.fund-header {
+  color : #f42 ;
+}
+
+.fund-header li {
+  border-right: solid 1px orangered;
+  padding: 7px;
+}
+
+
+.fund-item h2 {
+  font-size: 1rem;
 }
 
 .fund-title {
-  background-color: orangered;
+  background-color: #f42;
   padding: 10px;
+  padding-top: 19px;
+  color: white;
+}
+
+.fund-title h2 {
+  margin-left: 70px;
+}
+
+.fund-logo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  margin: 10.6px;
+}
+
+.fund-logo img {
+  width: 100%;
 }
 
 .fund-amount {
-  background-color: rosybrown;
-  margin-top: -37px;
+  background-color: #fcede8;
+  padding: 15px 0;
+  padding-left: 80px;
+  padding-top: 15px;
+}
+
+.fund-amount span {
+  font-size: 11px;
+  color: #9c908e;
 }
 
 .fund-info {
-  background-color: lightgoldenrodyellow;
+  background-color: #fefaf8;
+}
+
+.fund-info div {
+  padding: 20px 10px;
+  padding-right: 0;
+}
+
+.fund-info div:first-child {
+  padding-bottom: 17px;
+  border-bottom: 1px solid #f9cfc5;
+}
+
+.fund-info div:first-child p {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.fund-info div:last-child {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.fund-info div:last-child p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.fund-info span {
+  color: #aaa;
 }
 
 .categories-section {
   margin-top: 110px;
   grid-template-columns: repeat(3, 1fr);
-  height: 30vh;
   grid-gap: 20px;
   padding-left: 40px;
   padding-right: 40px;
