@@ -253,7 +253,6 @@ button {
 .latest-news {
   margin-top: 40px;
   margin-bottom: 50px;
-  height: 40vh;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   width: 100%;
@@ -264,7 +263,27 @@ button {
 }
 
 .news-item {
-  background-color: tomato;
+ display: flex; 
+ flex-direction: column;
+
+}
+.news-item-img img {
+  width: 100%;
+  height: 100%;
+}
+.news-item p {
+  color: black;
+  font-size: 13px;
+  padding-top: 2px;
+  margin-left: 4px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.news-item span {
+  color: #ccc;
+  font-size: 13px;
+  padding-top: 2px;
+  margin-left: 4px;
 }
 
 .fund-round {
@@ -419,7 +438,11 @@ button {
   .latest-news {
     grid-template-columns: 1fr;
   }
+  .news-item-img img {
+    width: 30%;
+    height: 20%;
 
+  }
   .categories-section {
     margin-top: 270px;
     grid-template-columns: 1fr;
@@ -438,6 +461,7 @@ button {
     'logo main-nav'
     ;
   }
+
 
   .menu-icon {
     display: inline-block;
@@ -467,4 +491,5 @@ button {
     'fa-small-2';
     grid-template-columns: 1fr;
   }
+ 
 }
