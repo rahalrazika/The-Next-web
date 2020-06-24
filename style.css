@@ -60,6 +60,20 @@ button {
 .mobile-logo img {
   width: 100%;
 }
+.social-icons a {
+  height: 40px;
+  width: 40px;
+  background-color: #444;
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  text-align: center;
+}
+
+.social-icons a:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #333;
+}
 
 .upper-nav {
   height: 30px;
@@ -76,6 +90,24 @@ button {
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   font-weight: 100;
+}
+
+.conf-info {
+  background-color: #fd3;
+}
+
+.conf-info a {
+  display: block;
+  padding: 7px 0;
+  color: #000;
+  font-size: 13px;
+  font-weight: 100;
+  padding-left: 20px;
+}
+
+.mn-list li a {
+  color: #aaa;
+  font-size: 13px;
 }
 
 .upper-nav a:hover {
@@ -96,11 +128,6 @@ button {
 .main-nav li {
   justify-content: space-between;
   padding: 5px;
-}
-
-.mn-list li a {
-  color: #aaa;
-  font-size: 13px;
 }
 
 .mn-list li a:hover {
@@ -155,19 +182,6 @@ button {
 
 .conf-time button:hover {
   background-color: purple;
-}
-
-.conf-info {
-  background-color: #fd3;
-}
-
-.conf-info a {
-  display: block;
-  padding: 7px 0;
-  color: #000;
-  font-size: 13px;
-  font-weight: 100;
-  padding-left: 20px;
 }
 
 .featured-articles {
@@ -306,7 +320,7 @@ button {
 }
 
 .fund-header {
-  color : #f42;
+  color: #f42;
 }
 
 .fund-header ul {
@@ -366,6 +380,30 @@ button {
 .fund-amount span {
   font-size: 11px;
   color: #9c908e;
+}
+
+.cat-main-art p {
+  font-size: 12px;
+}
+
+.cat-main-art div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 14px;
+}
+
+.latest-section p {
+  font-size: 12px;
+}
+
+.deal-cover p {
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 4px;
+  top: 24px;
 }
 
 .fund-info {
@@ -434,7 +472,8 @@ button {
 }
 
 .cat-bg-1 {
-  background-image: 
+  background-image:
+
   linear-gradient(
     rgba(51, 51, 51, 0),
     rgba(51, 51, 51, 0.85)
@@ -521,27 +560,16 @@ button {
   padding: 4px 0;
   }
 
- .cat-main-art p {
-   font-size: 12px;
- }
-
 .cat-main-art span {
   font-size: 12px;
   color: #aaa;
-}
-
-.cat-main-art div {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 14px;
 }
 
 .cat-sec-art {
   display: grid;
   grid-template-columns: 1fr 96px;
   grid-template-rows: 96px;
-  background-color: rgba(255, 68, 34, .06);
+  background-color: rgba(255, 68, 34, .6);
   color: #f42;
 }
 
@@ -600,21 +628,12 @@ button {
   margin-top: 12px;
 }
 
-.cat-list li {
-  border-bottom: solid 1px #eee;
-  font-size: 0.8rem;
-  color: #999;
-  cursor: pointer;
-  padding: 8px 0 8px 14px;
-  position: relative;
-}
-
 .cat-list li:hover {
   color: #000;
 }
 
 .cat-list li::before {
-  content: ""; 
+  content: "";
   background-color: #f42;
   border-radius: 50%;
   display: block;
@@ -629,10 +648,6 @@ button {
   background-color: rosybrown;
 }
 
-.latest-section p {
- font-size: 12px;
-}
-
 .latest-section h2 {
   font-size: 14px;
 }
@@ -641,7 +656,7 @@ button {
   font-size: 12px;
 }
 
-.latest-section img{
+.latest-section img {
   width: 10%;
   float: right;
 }
@@ -660,15 +675,6 @@ button {
   right: 0;
   position: absolute;
   overflow: hidden;
-}
-
-.deal-cover p {
-  font-size: 13px;
-  font-weight: bold;
-  position: absolute;
-  transform: rotate(45deg);
-  right: 4px;
-  top: 24px;
 }
 
 .deals-item span {
@@ -708,7 +714,7 @@ button {
 }
 
 .deal-descounts-3 {
-  background-image: url(assets/deals3.jpg); 
+  background-image: url(assets/deals3.jpg);
 }
 
 .deal-descounts-4 {
@@ -719,7 +725,7 @@ button {
   background-image: url(assets/deals-5.jpg);
 }
 
-.deal-descounts-6{
+.deal-descounts-6 {
   background-image: url(assets/deals-6.jpg);
 }
 
@@ -748,25 +754,6 @@ button {
   justify-content: center;
 }
 
-.social-icons li {
-  padding: 10px;
-}
-
-.social-icons a {
-  height: 40px;
-  width: 40px;
-  background-color: #444;
-  border-radius: 50%;
-  padding: 12px;
-  display: flex;
-  text-align: center;
-}
-
-.social-icons a:hover {
-  background-color: transparent;
-  box-shadow: inset 0 0 0 2px #333;
-}
-
 .social-icons img {
   width: 16px;
   height: 16px;
@@ -776,13 +763,6 @@ button {
   padding: 20px;
   padding-top: 0;
   justify-content: center;
-}
-
-.footer-nav li {
-  padding: 10px;
-  font-weight: 100;
-  font-size: 12px;
-  text-transform: uppercase;
 }
 
 .copyright-area {
@@ -847,6 +827,25 @@ button {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .social-icons li {
+    padding: 10px;
+  }
+  
+  .cat-list li {
+    border-bottom: solid 1px #eee;
+    font-size: 0.8rem;
+    color: #999;
+    cursor: pointer;
+    padding: 8px 0 8px 14px;
+    position: relative;
+  }
+  .footer-nav li {
+    padding: 10px;
+    font-weight: 100;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
   .fund-header {
     flex-direction: column;
   }
@@ -946,7 +945,7 @@ button {
     font-size: 0.75rem;
   }
 
-  .deal-cover img, .deal-cover p {
+  .deal-cover img .deal-cover p {
     display: none;
   }
 }
