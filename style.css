@@ -573,7 +573,25 @@ button {
 .cat-lt-bg-8 {
   background-image: url("assets/latest-8.png");
 }
+.cat-list ul {
+ margin-top: 12px;
 
+}
+.cat-list li {
+  border-bottom: solid 1px #ccc;
+  padding: 9px;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+.cat-list li:hover {
+  color: #000;
+}
+.cat-list li::before {
+  content: "•"; 
+  color: red;
+  margin-right: 15px;
+
+}
 .latest-section {
   background-color: rosybrown;
 }
