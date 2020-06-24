@@ -488,9 +488,10 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
-  padding-top: 35%;
+  padding-top: 75%;
   padding-bottom: 15px;
   color: white;
+  position: relative;
  }
 
  .cat-main-art h2 {
@@ -506,15 +507,71 @@ button {
   font-size: 12px;
   color: #aaa;
 }
-.cat-sec-art {
-  display: flex;
-  flex-direction: row;
-  background-color: rosybrown;
+
+.cat-main-art div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 14px;
 }
-.cat-sec-art img {
-  width: 20%;
-  height: 20%;
- 
+
+.cat-sec-art {
+  display: grid;
+  grid-template-columns: 1fr 96px;
+  grid-template-rows: 96px;
+  background-color: rgba(255, 68, 34, .06);
+  color: #f42;
+}
+
+.cat-sec-art h5 {
+  font-weight: 400;
+}
+
+.cat-sec-art h4 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 3px;
+}
+
+.cat-sec-art div:first-child {
+  padding: 10px 14px 0;
+}
+
+.cat-sec-art div:last-child {
+  background-size: cover;
+  background-position: 50%;
+}
+
+.cat-lt-bg-1 {
+  background-image: url("assets/latest-1.png");
+}
+
+.cat-lt-bg-2 {
+  background-image: url("assets/latest-2.png");
+}
+
+.cat-lt-bg-3 {
+  background-image: url("assets/latest-3.jpg");
+}
+
+.cat-lt-bg-4 {
+  background-image: url("assets/latest-4.jpg");
+}
+
+.cat-lt-bg-5 {
+  background-image: url("assets/latest-5.jpg");
+}
+
+.cat-lt-bg-6 {
+  background-image: url("assets/latest-6.png");
+}
+
+.cat-lt-bg-7 {
+  background-image: url("assets/latest-7.jpg");
+}
+
+.cat-lt-bg-8 {
+  background-image: url("assets/latest-8.png");
 }
 
 .latest-section {
