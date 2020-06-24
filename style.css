@@ -48,7 +48,7 @@ button {
 
 .mobile-logo {
   display: none;
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
   width: 75px;
   grid-area: logo;
 }
@@ -83,7 +83,7 @@ button {
 }
 
 .un-list-two li {
-    padding: 0 10px;   
+  padding: 0 10px;
 }
 
 .main-nav {
@@ -94,13 +94,13 @@ button {
 }
 
 .main-nav li {
- justify-content: space-between;
- padding: 5px;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .mn-list li a {
-   color: #aaa;
-   font-size: 13px;
+  color: #aaa;
+  font-size: 13px;
 }
 
 .mn-list li a:hover {
@@ -158,7 +158,7 @@ button {
 }
 
 .conf-info {
-  background-color: #fd3
+  background-color: #fd3;
 }
 
 .conf-info a {
@@ -174,18 +174,17 @@ button {
   display: grid;
   grid-template-columns: 3fr 1.5fr;
   grid-template-areas:
-  'fa-main fa-small-1'
-  'fa-main fa-small-2'
-  ;
+    'fa-main fa-small-1'
+    'fa-main fa-small-2';
   grid-gap: 7px;
   padding: 3px;
 }
 
 .fa-main {
   grid-area: fa-main;
-  background-image: 
-  url("assets/cover-gradient.png"),
-  url("assets/img-cover.png");
+  background-image:
+    url("assets/cover-gradient.png"),
+    url("assets/img-cover.png");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
@@ -307,7 +306,7 @@ button {
 }
 
 .fund-header {
-  color : #f42 ;
+  color : #f42;
 }
 
 .fund-header ul {
@@ -328,7 +327,6 @@ button {
 .fund-header li:last-child {
   border-color: transparent;
 }
-
 
 .fund-item h2 {
   font-size: 1rem;
