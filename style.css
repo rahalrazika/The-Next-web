@@ -35,6 +35,13 @@ button {
   justify-content: space-between;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+  padding-top: 50px;
+}
+
 .mobile-logo {
   display: none;
   background: linear-gradient(to bottom right,#c09,#f42 85%);
@@ -240,27 +247,6 @@ button {
   color: white;
 }
 
-/* .fa-small-2 h2 {
-  color: aliceblue;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  margin-left: 16px;
-}
-
-.fa-small-2 p {
-  color: aliceblue;
-  font-size: 25px;
-  padding-top: 11px;
-  margin-left: 16px;
-  margin-bottom: 0.8rem;
-}
-
-.fa-small-2 span {
-  color: aliceblue;
-  font-size: 0.6rem ;
-  margin-left: 12px;
-} */
-
 .pd-40 {
   padding: 40px;
 }
@@ -297,7 +283,7 @@ button {
 }
 
 .news-item span {
-  color: #ccc;
+  color: #999;
   font-size: 13px;
   font-weight: 100;
   padding-top: 7px;
@@ -320,9 +306,23 @@ button {
   color : #f42 ;
 }
 
+.fund-header ul {
+  align-items: baseline;
+}
+
 .fund-header li {
   border-right: solid 1px orangered;
   padding: 7px;
+  border-width: thin;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: fit-content;
+  align-self: center;
+  font-weight: 100;
+}
+
+.fund-header li:last-child {
+  border-color: transparent;
 }
 
 
@@ -403,13 +403,32 @@ button {
   margin-top: 110px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .category-item {
   display: flex;
   flex-direction: column;
+}
+
+.category-title {
+  padding: 15px 0;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.category-title::after {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+  background-size: 16px 16px;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-left: 4px;
+  position: relative;
+  top: 0;
+  width: 16px;
 }
 
 .cat-bg-1 {
@@ -487,6 +506,7 @@ button {
 .cat-main-art {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
   padding: 10px;
   padding-top: 75%;
   padding-bottom: 15px;
@@ -511,7 +531,7 @@ button {
 .cat-main-art div {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   padding: 14px;
 }
 
@@ -573,25 +593,36 @@ button {
 .cat-lt-bg-8 {
   background-image: url("assets/latest-8.png");
 }
-.cat-list ul {
- margin-top: 12px;
 
+.cat-list ul {
+  margin-top: 12px;
 }
+
 .cat-list li {
-  border-bottom: solid 1px #ccc;
-  padding: 9px;
+  border-bottom: solid 1px #eee;
   font-size: 0.8rem;
-  color: #ccc;
+  color: #999;
+  cursor: pointer;
+  padding: 8px 0 8px 14px;
+  position: relative;
 }
+
 .cat-list li:hover {
   color: #000;
 }
-.cat-list li::before {
-  content: "•"; 
-  color: red;
-  margin-right: 15px;
 
+.cat-list li::before {
+  content: ""; 
+  background-color: #f42;
+  border-radius: 50%;
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 4px;
 }
+
 .latest-section {
   background-color: rosybrown;
 }
@@ -611,10 +642,6 @@ button {
 .latest-section img{
   width: 10%;
   float: right;
-}
-
-.latest-deals {
-  margin-top: 700px;
 }
 
 .widget-area {
@@ -726,6 +753,14 @@ button {
 
   .fund-round {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fund-header {
+    flex-direction: column;
+  }
+
+  .fund-header ul {
+    padding-top: 20px;
   }
 }
 
