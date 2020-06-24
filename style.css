@@ -19,6 +19,10 @@ button {
   outline: none;
 }
 
+.pt-20 {
+  padding-top: 20px;
+}
+
 .flex {
   display: flex;
 }
@@ -644,25 +648,57 @@ button {
   float: right;
 }
 
-.deal-cover{
-  width: 100%;
-  padding-bottom: 191px;
-}
-.deal-cover img {
-  width: 50%;
-  float: right;
+.deal-cover {
+  background-size: cover;
+  background-position: 0 100%;
   position: relative;
- 
+  padding-top: 74.5%;
+  height: 0;
 }
-.deal-cover p {
-  float: right;
-  font-size: 12px;
-  font-weight: bold;
-  font-display: ;
+
+.deal-cover img {
+  width: 80px;
+  top: 0;
+  right: 0;
   position: absolute;
-  padding-left: 200px;
-  padding-top: 20px;
-  transform: scale(1, 2);
+  overflow: hidden;
+}
+
+.deal-cover p {
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 4px;
+  top: 24px;
+}
+
+.deals-item span {
+  font-weight: 100;
+}
+
+.deals-item span:last-child {
+  font-size: 14px;
+  color: #555;
+}
+
+.strike-text {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+.deals-item h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.deals-item h2:hover {
+  color: #f42;
+  text-decoration: underline;
 }
 
 .deal-descounts-1 {
@@ -679,7 +715,6 @@ button {
 
 .deal-descounts-4 {
   background-image: url(assets/deals-4.jpg);
- 
 }
 
 .deal-descounts-5 {
@@ -911,5 +946,9 @@ button {
     display: inline-block;
     margin-top: 5px;
     font-size: 0.75rem;
+  }
+
+  .deal-cover img, .deal-cover p {
+    display: none;
   }
 }
