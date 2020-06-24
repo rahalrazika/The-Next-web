@@ -339,10 +339,6 @@ button {
   font-weight: 100;
 }
 
-.fund-header li:last-child {
-  border-color: transparent;
-}
-
 .fund-item h2 {
   font-size: 1rem;
 }
@@ -626,6 +622,19 @@ button {
 
 .cat-list ul {
   margin-top: 12px;
+}
+
+.cat-list li {
+  border-bottom: solid 1px #eee;
+  font-size: 0.8rem;
+  color: #999;
+  cursor: pointer;
+  padding: 8px 0 8px 14px;
+  position: relative;
+}
+
+.fund-header li:last-child {
+  border-color: transparent;
 }
 
 .cat-list li:hover {
