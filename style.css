@@ -644,6 +644,65 @@ button {
   float: right;
 }
 
+.deal-cover{
+  width: 100%;
+  padding-bottom: 191px;
+}
+.deal-cover img {
+  width: 50%;
+  float: right;
+  position: relative;
+ 
+}
+.deal-cover p {
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  font-display: ;
+  position: absolute;
+  padding-left: 200px;
+  padding-top: 20px;
+  transform: scale(1, 2);
+}
+
+.deal-descounts-1 {
+  background-image: url(assets/deals1.jpg);
+}
+
+.deal-descounts-2 {
+  background-image: url(assets/deals2.jpg);
+}
+
+.deal-descounts-3 {
+  background-image: url(assets/deals3.jpg); 
+}
+
+.deal-descounts-4 {
+  background-image: url(assets/deals-4.jpg);
+ 
+}
+
+.deal-descounts-5 {
+  background-image: url(assets/deals-5.jpg);
+}
+
+.deal-descounts-6{
+  background-image: url(assets/deals-6.jpg);
+}
+
+.deal-descounts-7 {
+  background-image: url(assets/deals-7.jpg);
+}
+
+.deal-descounts-8 {
+  background-image: url(assets/deals-8.jpg);
+}
+
+.deal-descounts- {
+  background-image: url(assets/deals-8.jpg);
+  background-size: cover;
+}
+
 .widget-area {
   background-color: #131313;
   justify-content: center;
