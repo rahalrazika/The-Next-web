@@ -506,6 +506,16 @@ button {
   font-size: 12px;
   color: #aaa;
 }
+.cat-sec-art {
+  display: flex;
+  flex-direction: row;
+  background-color: rosybrown;
+}
+.cat-sec-art img {
+  width: 20%;
+  height: 20%;
+ 
+}
 
 .latest-section {
   background-color: rosybrown;
