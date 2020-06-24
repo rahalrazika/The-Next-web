@@ -60,6 +60,7 @@ button {
 .mobile-logo img {
   width: 100%;
 }
+
 .social-icons a {
   height: 40px;
   width: 40px;
@@ -68,11 +69,6 @@ button {
   padding: 12px;
   display: flex;
   text-align: center;
-}
-
-.social-icons a:hover {
-  background-color: transparent;
-  box-shadow: inset 0 0 0 2px #333;
 }
 
 .upper-nav {
@@ -108,6 +104,11 @@ button {
 .mn-list li a {
   color: #aaa;
   font-size: 13px;
+}
+
+.social-icons a:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #333;
 }
 
 .upper-nav a:hover {
@@ -473,75 +474,74 @@ button {
 
 .cat-bg-1 {
   background-image:
-
-  linear-gradient(
-    rgba(51, 51, 51, 0),
-    rgba(51, 51, 51, 0.85)
-  ),
-  url(assets/cat-1.png);
+    linear-gradient(
+      rgba(51, 51, 51, 0),
+      rgba(51, 51, 51, 0.85)
+    ),
+    url(assets/cat-1.png);
 }
 
 .cat-bg-2 {
-  background-image: 
-  linear-gradient(
-    rgba(51, 51, 51, 0),
-    rgba(51, 51, 51, 0.85)
-  ),
-  url(assets/cat-2.jpg);
+  background-image:
+    linear-gradient(
+      rgba(51, 51, 51, 0),
+      rgba(51, 51, 51, 0.85)
+    ),
+    url(assets/cat-2.jpg);
 }
 
 .cat-bg-3 {
-  background-image: 
-  linear-gradient(
-    rgba(51, 51, 51, 0),
-    rgba(51, 51, 51, 0.85)
-  ),
-  url(assets/cat-3.png);
+  background-image:
+    linear-gradient(
+      rgba(51, 51, 51, 0),
+      rgba(51, 51, 51, 0.85)
+    ),
+    url(assets/cat-3.png);
 }
 
 .cat-bg-4 {
-  background-image: 
-  linear-gradient(
-    rgba(51, 51, 51, 0),
-    rgba(51, 51, 51, 0.85)
-  ),
-  url(assets/cat-4.jpg);
+  background-image:
+    linear-gradient(
+      rgba(51, 51, 51, 0),
+      rgba(51, 51, 51, 0.85)
+    ),
+    url(assets/cat-4.jpg);
 }
 
 .cat-bg-5 {
-  background-image: 
-  linear-gradient(
-    rgba(51, 51, 51, 0),
-    rgba(51, 51, 51, 0.85)
-  ),
-  url(assets/cat-5.jpg);
+  background-image:
+    linear-gradient(
+      rgba(51, 51, 51, 0),
+      rgba(51, 51, 51, 0.85)
+    ),
+    url(assets/cat-5.jpg);
 }
 
 .cat-bg-6 {
-  background-image: 
-  linear-gradient(
-    rgba(51, 51, 51, 0),
-    rgba(51, 51, 51, 0.85)
-  ),
-  url(assets/cat-6.jpg);
+  background-image:
+    linear-gradient(
+      rgba(51, 51, 51, 0),
+      rgba(51, 51, 51, 0.85)
+    ),
+    url(assets/cat-6.jpg);
 }
 
 .cat-bg-7 {
-  background-image: 
-  linear-gradient(
-    rgba(51, 51, 51, 0),
-    rgba(51, 51, 51, 0.85)
-  ),
-  url(assets/cat-7.jpg);
+  background-image:
+    linear-gradient(
+      rgba(51, 51, 51, 0),
+      rgba(51, 51, 51, 0.85)
+    ),
+    url(assets/cat-7.jpg);
 }
 
 .cat-bg-8 {
-  background-image: 
-  linear-gradient(
-    rgba(51, 51, 51, 0),
-    rgba(51, 51, 51, 0.85)
-  ),
-  url(assets/cat-8.jpg);
+  background-image:
+    linear-gradient(
+      rgba(51, 51, 51, 0),
+      rgba(51, 51, 51, 0.85)
+    ),
+    url(assets/cat-8.jpg);
 }
 
 .cat-main-art {
@@ -553,12 +553,12 @@ button {
   padding-bottom: 15px;
   color: white;
   position: relative;
- }
+}
 
- .cat-main-art h2 {
+.cat-main-art h2 {
   font-size: 1.3rem;
   padding: 4px 0;
-  }
+}
 
 .cat-main-art span {
   font-size: 12px;
@@ -569,7 +569,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 96px;
   grid-template-rows: 96px;
-  background-color: rgba(255, 68, 34, .6);
+  background-color: rgba(255, 68, 34, 0.6);
   color: #f42;
 }
 
@@ -681,11 +681,6 @@ button {
   font-weight: 100;
 }
 
-.deals-item span:last-child {
-  font-size: 14px;
-  color: #555;
-}
-
 .strike-text {
   text-decoration: line-through;
   color: #aaa;
@@ -782,17 +777,27 @@ button {
   font-weight: 100;
 }
 
+.deals-item span:last-child {
+  font-size: 14px;
+  color: #555;
+}
+
 @media screen and (max-width: 1110px) {
-  .eco-text, .conf-time span, .conf-time p, .conf-time button {display: none;}
+  .eco-text,
+  .conf-time span,
+  .conf-time p,
+  .conf-time button {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1023px) {
   .mobile-nav-grid {
     display: grid;
     grid-template-columns: 75px 1fr;
-    grid-template-areas: 
-    'logo upper-nav'
-    'logo main-nav';
+    grid-template-areas:
+      'logo upper-nav'
+      'logo main-nav';
   }
 
   .mobile-logo {
@@ -820,7 +825,7 @@ button {
   }
 
   .categories-section {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .fund-round {
@@ -830,7 +835,7 @@ button {
   .social-icons li {
     padding: 10px;
   }
-  
+
   .cat-list li {
     border-bottom: solid 1px #eee;
     font-size: 0.8rem;
@@ -839,13 +844,14 @@ button {
     padding: 8px 0 8px 14px;
     position: relative;
   }
+
   .footer-nav li {
     padding: 10px;
     font-weight: 100;
     font-size: 12px;
     text-transform: uppercase;
   }
-  
+
   .fund-header {
     flex-direction: column;
   }
@@ -859,9 +865,7 @@ button {
   .mobile-nav-grid {
     display: grid;
     grid-template-columns: 75px 1fr;
-    grid-template-areas: 
-    'logo main-nav'
-    ;
+    grid-template-areas: 'logo main-nav';
   }
 
   .menu-icon {
@@ -886,10 +890,10 @@ button {
   }
 
   .featured-articles {
-    grid-template-areas: 
-    'fa-main'
-    'fa-small-1'
-    'fa-small-2';
+    grid-template-areas:
+      'fa-main'
+      'fa-small-1'
+      'fa-small-2';
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
@@ -915,7 +919,6 @@ button {
 
   .news-item-img {
     height: 72px;
-    
   }
 
   .news-item-img img {
