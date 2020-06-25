@@ -448,12 +448,15 @@ button {
 }
 
 .category-title {
-  padding: 15px 0;
   color: #f42;
   font-weight: 700;
   line-height: 1.1;
   font-size: 1.7rem;
   cursor: pointer;
+}
+
+.category-item .category-title {
+  padding: 15px 0;
 }
 
 .category-title::after {
@@ -574,7 +577,7 @@ button {
 }
 
 .cat-sec-art h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   padding-top: 3px;
 }
@@ -631,14 +634,6 @@ button {
   cursor: pointer;
   padding: 8px 0 8px 14px;
   position: relative;
-}
-
-.fund-header li:last-child {
-  border-color: transparent;
-}
-
-.cat-list li:hover {
-  color: #000;
 }
 
 .cat-list li::before {
@@ -791,6 +786,25 @@ button {
   color: #555;
 }
 
+.social-icons li {
+  padding: 10px;
+}
+
+.footer-nav li {
+  padding: 10px;
+  font-weight: 100;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.fund-header li:last-child {
+  border-color: transparent;
+}
+
+.cat-list li:hover {
+  color: #000;
+}
+
 @media screen and (max-width: 1110px) {
   .eco-text,
   .conf-time span,
@@ -839,10 +853,6 @@ button {
 
   .fund-round {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .social-icons li {
-    padding: 10px;
   }
 
   .cat-list li {
@@ -935,7 +945,7 @@ button {
   }
 
   .categories-section {
-    margin-top: 270px;
+    margin-top: 20px;
     grid-template-columns: 1fr;
   }
 
@@ -957,7 +967,8 @@ button {
     font-size: 0.75rem;
   }
 
-  .deal-cover img .deal-cover p {
+  .deal-cover img,
+  .deal-cover p {
     display: none;
   }
 }
