@@ -1,6 +1,6 @@
 # The Next Web
 
-> A clone of the homepage page of the The Next Web.
+> A clone of the homepage page of The Next Web.
 
 ![screenshot](assets/Screenshot.png)
 
