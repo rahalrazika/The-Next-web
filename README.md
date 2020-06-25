@@ -1,9 +1,10 @@
-# The-Next-web
+# The Next Web
+
+> A clone of the homepage page of the The Next Web.
 
 ![screenshot](assets/Screenshot.png)
 
-This project was created  for parcticing and  Building with Responsive Design in HTML and CSS 
- using the page of [the next web](https://thenextweb.com) like an example. 
+This project is a clone of the homepage of The Next Web made with HTML & CSS.
 
 ## Built With
 
